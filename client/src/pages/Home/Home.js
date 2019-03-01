@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-
-import logo from './logo.svg';
+import './home.css';
+// import logo from './logo.svg';
+import dogsBlur from './blurdogsuptown.png';
 
 class HomePage extends Component {
   render() {
@@ -8,8 +9,8 @@ class HomePage extends Component {
       <div className='Home'>
         <div className='row'>
           <div className='col'>
-            <img src={logo} className='App-logo' alt='logo' />
-            <p>
+            {/* <img src={logo} className='App-logo' alt='logo' /> */}
+            {/* <p>
               Edit <code>src/pages/Home.js</code> and save to reload.
             </p>
             <a
@@ -19,7 +20,19 @@ class HomePage extends Component {
               rel="noopener noreferrer"
             >
               Learn React
-            </a>
+            </a> */}
+            <img src={dogsBlur} className='dogsImage' alt='Dogs' />
+          </div>
+        </div>
+          <div className='row align-items-center' id='DAV'>
+            <div className='col' id='donate'>
+              <p>Donate</p>
+            </div>
+            <div className='col-5' id='adoptable'>
+              <p>Adoptable</p>
+            </div>
+            <div className='col' id='volunteer'>
+              <p>Volunteer</p>
           </div>
         </div>
       </div>

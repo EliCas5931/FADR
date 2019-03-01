@@ -1,0 +1,31 @@
+.home {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dogsImage {
+    width: 100%;
+}
+
+#DAV {
+    text-align: center;
+    line-height: 200px;
+    height: 200px;
+    font-size: 50px;
+    color: white;
+}
+
+#donate {
+    background-color: #5680e9;
+    height: 200px;
+}
+
+#adoptable {
+    height: 200px;
+    background-color: #5ab9ea;
+}
+
+#volunteer {
+    background-color: #8860d0;
+    height: 200px;
+}

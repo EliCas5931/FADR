@@ -12,6 +12,9 @@ import Secret from '../../pages/Secret/Secret';
 import Home from '../../pages/Home/Home';
 import NotFound from '../../pages/NotFound/NotFound';
 
+// I'm adding this so I can see my addition
+import Footer from '../../components/Footer/Footer';
+
 import './App.css';
 
 class App extends Component {
@@ -63,6 +66,9 @@ class App extends Component {
             </Switch>
           </div>
         </div>
+        <footer>
+            <Footer />
+        </footer>
       </AuthContext.Provider>
     );
   }
