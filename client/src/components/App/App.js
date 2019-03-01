@@ -56,7 +56,8 @@ class App extends Component {
       <AuthContext.Provider value={this.state.auth}>
         <div className='App'>
           <Navigation />
-          <div className='container'>
+          {/* This may be why it will not fill full page */}
+          <div className='mainBody'>
             <Switch>
               <Route path='/login' component={Login} />
               <Route path='/register' component={Register} />
