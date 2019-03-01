@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// The code below is throwing an error when running. Error "Link is defined but never used". Jeff ok'ed this to delete
+// import { Link } from 'react-router-dom';
 import Gravatar from 'react-gravatar';
 
 import AuthContext from '../../contexts/AuthContext';
