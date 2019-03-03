@@ -32,7 +32,7 @@ class Navigation extends Component {
         <nav className='navbar navbar-expand-lg navbar-light bg-light mb-3'>
           {/* <Link className='navbar-brand' to='#'>Family Addition Dog Rescue</Link> */}
 
-          <a className="navbar-brand" href="https://system.netsuite.com/core/media/media.nl?id=3738002&c=589178&h=cd9e47a89ed774871723" target="_blank" rel="noopener noreferrer"> <img src={fadr} className='FADRlogo' alt='Family Addition Logo' height="160" width="200" /></a>
+          <a className="navbar-brand" href="https://system.netsuite.com/core/media/media.nl?id=3738002&c=589178&h=cd9e47a89ed774871723" target="_blank" rel="noopener noreferrer"> <img src={fadr} className='FADRlogo' alt='Family Addition Logo' height="150" width="200" /></a>
 
           <button className={togglerClass} onClick={this.toggleCollapse} data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
             <span className='navbar-toggler-icon'></span>

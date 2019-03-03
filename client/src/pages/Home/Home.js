@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './home.css';
 // import logo from './logo.svg';
-import dogsBlur from './blurdogsuptown.png';
+import dogsBlur from '../../images/bestblurdogs.png';
 
 class HomePage extends Component {
   render() {
@@ -9,18 +9,6 @@ class HomePage extends Component {
       <div className='Home'>
         <div className='row'>
           <div className='col'>
-            {/* <img src={logo} className='App-logo' alt='logo' /> */}
-            {/* <p>
-              Edit <code>src/pages/Home.js</code> and save to reload.
-            </p>
-            <a
-              className='App-link'
-              href='https://reactjs.org'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a> */}
             <img src={dogsBlur} className='dogsImage' alt='Dogs' />
           </div>
         </div>
