@@ -1,0 +1,17 @@
+#aboutLogo {
+    height: 350px;
+    width: 400px;
+}
+
+#aboutTitle {
+    text-align: center;
+}
+
+.About {
+    text-align: left;
+    font-size: 20px;
+}
+
+#under {
+    padding: 0px 0px 0px 30px;
+}
