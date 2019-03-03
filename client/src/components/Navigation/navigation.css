@@ -1,16 +1,21 @@
 .navbar {
     min-height: 60px;
-    background-color: white;
     padding-top: 0px;
     font-size: 30px;
   }
 
-  .navbar-nav {
-    color: white;    
+  .bg-light {
+    background-color: #ffffff!important;
+
   }
-  
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #338fa4;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+
   .navbar-brand {
-    padding: 0px 5%;
+    padding: 0px;
     height: 150px;
     line-height: 150px;
   }
@@ -19,7 +24,7 @@
     /* (80px - button height 34px) / 2 = 23px */
     margin-top: 0px;
     padding: 9px 10px !important;
-    color: white;
+    color: #ffffff;
   }
   
   @media (min-width: 768px) {

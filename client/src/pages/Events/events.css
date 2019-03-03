@@ -1,0 +1,29 @@
+.eventsCalendar {
+    padding: 10px 20px;
+}
+
+#calendarGoogle {
+    float: left;
+    border-radius: 15px;
+    border: 20px solid #ffffff;
+    width: 800px; 
+    height: 600px;
+    margin-left: 50px;
+}
+
+#agendaGoogle {
+    float: right;
+    width: 350px;
+    height: 600px;
+    border-radius: 15px;
+    border: 20px solid #ffffff;
+    margin-right: 60px;
+}
+
+#carousel1, #carousel2 {
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    margin: 20px;
+}
+

@@ -14,11 +14,27 @@
     height: 300px;
     font-size: 50px;
     color: white;
+    font-family: 'Ultra', serif;
 }
 
 #donate {
     background-color: #5680e9;
     height: 100%;
+}
+
+.donateIcon {
+    height: 50px;
+    width: 50px;
+}
+
+.pawPrint {
+    height: 35px;
+    width: 35px;
+}
+
+.volunteerIcon {
+    height: 40px;
+    width: 40px;
 }
 
 #adoptable {
