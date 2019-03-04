@@ -48,3 +48,11 @@
     background-color: #8860d0;
     height: 100%;
 }
+
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: white;
+}

@@ -16,6 +16,11 @@ import Events from '../../pages/Events/Events';
 import Contact from '../../pages/Contact/Contact';
 import Application from '../../pages/Application/Application';
 
+// Pages from home page
+import Donate from '../../pages/Donate/Donate';
+import Adoptables from '../../pages/Adoptables/Adoptables';
+import Volunteer from '../../pages/Volunteer/Volunteer';
+
 // Jeff's routes
 import Login from '../../pages/Login/Login';
 import NotFound from '../../pages/NotFound/NotFound';
@@ -81,6 +86,10 @@ class App extends Component {
               <Route exact path='/events' component={Events} />
               <Route exact path='/contact' component={Contact} />
               <Route exact path='/application' component={Application} />
+              {/* Bottom tabs for home page */}
+              <Route exact path='/donate' component={Donate} />
+              <Route exact path='/adoptables' component={Adoptables} />
+              <Route exact path='/volunteer' component={Volunteer} />
               <Route component={NotFound} />
             </Switch>
           </div>
