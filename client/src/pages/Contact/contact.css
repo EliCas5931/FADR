@@ -16,10 +16,9 @@ h1 {
     overflow: hidden;
 }
 
-iframe {
+#calendarGoogle, #agendaGoogle {
     height: 600px;
     width: 400px;
-    padding-top: 20px;
 }
 
 h2 {
