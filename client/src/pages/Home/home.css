@@ -1,6 +1,7 @@
 .home {
     margin: 0px;
     padding: 0px;
+    background: white;
 }
 
 .dogsImage {
@@ -14,7 +15,8 @@
     height: 300px;
     font-size: 50px;
     color: white;
-    font-family: 'Ultra', serif;
+    font-family: 'Open Sans', serif;
+    font-weight: bolder;
 }
 
 #donate {

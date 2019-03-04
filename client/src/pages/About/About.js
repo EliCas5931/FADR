@@ -12,7 +12,7 @@ class AboutPage extends Component {
                         <img src={aboutLogo} className='aboutImage' alt='About Logo' id='aboutLogo' />
                     </div>
                     <div className='col-9' id='aboutText'>
-                        <h1 id='aboutTitle'>About Us!</h1>
+                        <h1 id='aboutTitle'><strong>About Us!</strong></h1>
                         <br></br>
                         <h4>Our Mission</h4>
                         <p>
@@ -26,7 +26,7 @@ class AboutPage extends Component {
                     </div>
                     <div className='row' id='under'>
                         <div className='col'>
-                            <p>
+                            <p id="aboutText">
                                 Public awareness of our overpopulation problem is another focus of Family Addition. At all of our adoption events we ensure each citizen is educated on the plight of homeless animals in our area and the proper care of any companion animal.
                             </p>
                             <br></br><br></br><br></br><br></br>

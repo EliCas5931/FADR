@@ -1,15 +1,39 @@
 #aboutLogo {
+    margin: 10px;
     height: 350px;
     width: 400px;
 }
 
 #aboutTitle {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #7a56bb;
+    font-size: 50px;
+    margin: 10px 0px 5px 5px;
 }
 
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-weight: bold;
+    color: #7a56bb;
+}
 .About {
     text-align: left;
+    color: #7a56bb;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: lighter;
+    background: linear-gradient(217deg, rgba(124, 214, 214, 1), rgba(170, 191, 244, 1) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(132, 206, 235, 1) 70.71%),
+    linear-gradient(336deg, rgba(171, 143, 222, 1), rgba(0,0,255,0) 70.71%);
+    /* background-image: linear-gradient(to right, #5680E9, #5ab9ea, #7a56bb); */
+}
+
+#aboutText {
+    color: #8860d0;
+    padding: 10px;
 }
 
 #under {
