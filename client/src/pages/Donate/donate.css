@@ -1,68 +1,65 @@
+/* Full Page */
 .donatePage {
-    background-image: linear-gradient(to bottom right, #E1BEE7, #B2EBF2);
     height: 150%;
 }
 
-#donateBtn {
-	font-family: Helvetica, sans-serif;
-	font-weight: 100;
-	color: black;
+.row2 {
+    margin-top: 40px;
 }
 
-h1 {
-	letter-spacing: 0.5em;
-	text-align: center;
-	margin-top: 50px;
-	line-height: 1.6em;
-}
-
-p {
-	font-size: 1.1em;
-	text-align: center;
-	margin: 110px auto 20px;
-	letter-spacing: 0.05em;
-}
-
-.container {
-	text-align: center;
+/* Div surrounding the button */
+#buttonDonate {
+    height: 300px;
+    margin: 20px;
+    text-align: center;
 	position: relative;
 	width: 300px;
-	margin: 0 auto;
-	cursor: pointer;
+    cursor: pointer;
 }
 
-button {
-	position: relative;
-	height: 50px;
-	width: 280px;
-	border: 0;
-	border-radius: 5px;
-	text-transform: uppercase;
-	font-size: 1.1em;
-	letter-spacing: 0.2em;
-	overflow: hidden;
-	box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
-	z-index: -2;
+/* Actual Donate Button */
+#donateBtn {
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    height: 50px;
+    width: 280px;
+    border: 0;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    overflow: hidden;
+    /* box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10); */
+    z-index: -2;
 }
 
-/* .button-one {
-} */
-
+/* Div inside of the button */
 .fill-one {
-	position: absolute;
-	background-image: linear-gradient(to right, #E040FB, #00BCD4);
-	height: 70px;
-	width: 420px;
-	border-radius: 5px;
-	margin: -40px 0 0 -140px;
-	z-index: -1;
-	transition: all 0.4s ease;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    background-image: linear-gradient(to right, #E040FB, #00BCD4);
+    margin: -40px 0 0 -140px;
+    cursor: pointer!important;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    z-index: -1;
 }
 
-.container-one:hover .fill-one {
-	-webkit-transform: translateX(100px);
-	-moz-transform: translateX(100px);
-	transform: translateX(100px);
+/* Code used to change button colors */
+#buttonDonate:hover, .fill-one {
+    -webkit-transform: translate(100px);
+    -moz-transform: translate(100px);
+    transform: translate(100px);
+}
+
+.wishListCard {
+    width: 30rem;
+    margin: 20%;
+    height: 300px;
 }
 
 @-webkit-keyframes gradient {
