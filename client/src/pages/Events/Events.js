@@ -21,41 +21,27 @@ class EventPage extends Component {
                 <br></br>
                 <h1>Our Past Events!</h1>
                 <div className='row'>
-                    <div className='col-4'>
+                    <div className='col-8'>
                         <div id="carousel1" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
-                                <div className="carousel-item active" data-interval="5000">
-                                    <img src={dog1} className="d-block w-100" alt="..." />
+                                <div className="carousel-item active">
+                                    <img src={dog1} className="d-block w-100" alt="Dog Event Pictures" />
                                 </div>
-                                <div className="carousel-item" data-interval="5000">
-                                    <img src={dog2} className="d-block w-100" alt="..." />
+                                <div className="carousel-item">
+                                    <img src={dog2} className="d-block w-100" alt="Dog Event Pictures" />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={dog3} className="d-block w-100" alt="Dog Event Pictures" />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={dog4} className="d-block w-100" alt="Dog Event Pictures" />
                                 </div>
                             </div>
-                            <a className="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <a className="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span className="sr-only">Previous</span>
                             </a>
-                            <a className="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div className='col-4'>
-                        <div id="carousel2" className="carousel slide" data-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active" data-interval="5000">
-                                    <img src={dog3} className="d-block w-100" alt="..." />
-                                </div>
-                                <div className="carousel-item" data-interval="5000">
-                                    <img src={dog4} className="d-block w-100" alt="..." />
-                                </div>
-                            </div>
-                            <a className="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                            <a className="carousel-control-next" href="#carousel1" role="button" data-slide="next">
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span className="sr-only">Next</span>
                             </a>
