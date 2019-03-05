@@ -4,13 +4,8 @@ import './card.css';
 
 function Card(props) {
     return(
-        <div
-            className='card'
-            style={{
-                backgroundImage: 
-            }}
-        >
-        
+        <div className='card'>
+        {props.children}
         </div>
     );
 }

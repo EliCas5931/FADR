@@ -1,15 +1,58 @@
 import React, { Component } from 'react';
 import './adopt.css';
+import Card from "../../components/Card/Card";
+import PetInfo from "../../components/PetInfo/PetInfo.js";
+import API from "../../lib/API"
 
 class AdoptPage extends Component {
+    state = {
+        pets: []
+        // We can only do GETS with petfinder API. So we want to do GETs and store in mongoDB with mongoose, which is setup somewhat on server side.  Once we store the dog into the DB, we wanna populate the dog's info on the client side on the adoptables page. Find out how to set it up so that one dog per circle pops up. 
+
+    };
+    componentDidMount() {
+        console.log("KH1")
+        this.loadDog();
+        // const newState = { ...this.state };
+    }
+    
+    loadDog = () => {
+        // Make API call 
+        API.Petfinder.getAllDogs()
+        .then(res => {
+            this.setState({
+                pets: res.data
+            })
+            console.log(res.data)
+        })
+        
+        .catch(err => console.log(err))
+        console.log(this.state.pets)
+        // Store in the DB
+
+    }
+
     render() {
+        console.log(this.state.pets)
         return (
-            <div className='row'>
-                <div className='col'>
-                    <p>adopt me please</p>
-                </div>
-            </div>
-        );
+
+            <Card
+                heading={this.state.pets}>
+                {this.state.pets.length ? (
+                    this.state.pets.map(pet => (
+                        <PetInfo
+                        media={pet.name.$t}
+                        src={pet.media.photos.photo[2].$t}
+                        name={pet.name.$t}
+                        />
+                    )
+                
+                )) : (
+                        <h3>No Dogs Available at this Time.</h3>
+                    )}
+            </Card>
+        )
+
     }
 }
 
