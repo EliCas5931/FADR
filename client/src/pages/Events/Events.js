@@ -20,7 +20,7 @@ class EventPage extends Component {
                 </div>
                 <br></br>
                 <h1>Our Past Events!</h1>
-                <div className='row'>
+                <div className='row align-items-center'>
                     <div className='col-8'>
                         <div id="carousel1" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
