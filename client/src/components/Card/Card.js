@@ -6,9 +6,9 @@ function Card(props) {
     return(
         <div
             className='card'
-            style={{
-                backgroundImage: 
-            }}
+            // style=({
+            //     backgroundImage: 
+            // })
         >
         
         </div>

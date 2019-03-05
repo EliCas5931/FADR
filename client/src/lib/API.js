@@ -30,7 +30,7 @@ export default {
 
   Petfinder: {
     getAllDogs: function() {
-      return axios.get("api/petfinder/all")
+      return axios.get("/api/petfinder/all")
     }
   }
 }
