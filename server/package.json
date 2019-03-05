@@ -4,6 +4,7 @@
   "license": "MIT",
   "main": "server.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.0",
@@ -13,7 +14,7 @@
     "passport-jwt": "^4.0.0"
   },
   "scripts": {
-    "start": "node server",
-    "start:dev": "nodemon"
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start"
   }
 }
