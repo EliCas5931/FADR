@@ -29,7 +29,7 @@ class ContactPage extends Component {
                 </div>
                 <div className='row'>
                     <div className='col-6'>
-                        <div class="elfsight-app-8f1e4fcb-612b-4792-b815-02c0341e5178"></div>
+                        <div className="elfsight-app-8f1e4fcb-612b-4792-b815-02c0341e5178"></div>
                     </div>
                     <div className='col-6'>
                         <iframe title='Facebook Plugin' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFamilyAdditionDogRescueofClt%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" scrolling="no" frameBorder="0" allow="encrypted-media"></iframe>
