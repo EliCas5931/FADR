@@ -30,7 +30,25 @@ export default {
 
   Petfinder: {
     getAllDogs: function() {
-      return axios.get("/api/petfinder/all")
+      return axios.get('/api/petfinder/all')
+    },
+    createDog: function(dogData) {
+      return axios.post('/api/petfinder/create', dogData)
+    }
+
+  },
+
+  Bio: {
+    getBio: function(id) {
+      return axios.get('/api/petfinder/bio/' + id)
+    }
+  },
+
+  Database: {
+    getAllDB: function() {
+      return axios.get('/api/petfinder/alldogs')
     }
   }
 }
+
+

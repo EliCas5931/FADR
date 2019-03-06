@@ -3,11 +3,12 @@ import './adopt.css';
 import Card from "../../components/Card/Card";
 import PetInfo from "../../components/PetInfo/PetInfo.js";
 import API from "../../lib/API"
+import { Link } from "react-router-dom";
 
 class AdoptPage extends Component {
     state = {
         pets: []
-        // We can only do GETS with petfinder API. So we want to do GETs and store in mongoDB with mongoose, which is setup somewhat on server side.  Once we store the dog into the DB, we wanna populate the dog's info on the client side on the adoptables page. Find out how to set it up so that one dog per circle pops up. 
+        // We can only do GETS with petfinder API. So we want to do GETs and store in mongoDB with mongoose, which is setup somewhat on server side.  Once we store the dog into the DB, we wanna populate the dog's info on the client side on the adoptables page. 
 
     };
     componentDidMount() {
@@ -15,20 +16,30 @@ class AdoptPage extends Component {
         this.loadDog();
         // const newState = { ...this.state };
     }
-    
+
     loadDog = () => {
         // Make API call 
-        API.Petfinder.getAllDogs()
-        .then(res => {
-            this.setState({
-                pets: res.data
-            })
-            console.log(res.data)
-        })
-        
-        .catch(err => console.log(err))
-        console.log(this.state.pets)
+        // API.Petfinder.getAllDogs()
+        // .then(res => {
+        //     this.setState({
+        //         pets: res.data
+        //     })
+        //     console.log(res.data)
+        //     // loop through dogs one by one 
+        //     this.state.pets.forEach(dog => API.Petfinder.createDog(dog))
+        // })
+
+        // .catch(err => console.log(err))
+        // console.log(this.state.pets)
         // Store in the DB
+        API.Database.getAllDB()
+            .then(res => {
+                this.setState({
+                    pets: res.data
+                })
+                console.log(res.data)
+            })
+            .catch(err => console.log(err))
 
     }
 
@@ -40,16 +51,24 @@ class AdoptPage extends Component {
                 heading={this.state.pets}>
                 {this.state.pets.length ? (
                     this.state.pets.map(pet => (
+                        <Link to={"/bio/" + pet._id}>
                         <PetInfo
-                        media={pet.name.$t}
-                        src={pet.media.photos.photo[2].$t}
-                        name={pet.name.$t}
+                            key={pet._id}
+                            media={pet.name}
+                            src={pet.image}
+                            name={pet.name}
                         />
+                    </Link>
+                        // <PetInfo
+                        // media={pet.name.$t}
+                        // src={pet.media.photos.photo[3].$t}
+                        // name={pet.name.$t}
+                        // />
                     )
-                
+
                 )) : (
                         <h3>No Dogs Available at this Time.</h3>
-                    )}
+                )}
             </Card>
         )
 

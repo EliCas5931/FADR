@@ -19,6 +19,7 @@ import Application from '../../pages/Application/Application';
 // Pages from home page
 import Donate from '../../pages/Donate/Donate';
 import Adoptables from '../../pages/Adoptables/Adoptables';
+import BioPage from '../../pages/Bio/Bio';
 import Volunteer from '../../pages/Volunteer/Volunteer';
 
 // Jeff's routes
@@ -90,6 +91,7 @@ class App extends Component {
               <Route exact path='/donate' component={Donate} />
               <Route exact path='/adoptables' component={Adoptables} />
               <Route exact path='/volunteer' component={Volunteer} />
+              <Route exact path="/bio/:id" component={BioPage} />
               <Route component={NotFound} />
             </Switch>
           </div>
