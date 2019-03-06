@@ -1,0 +1,13 @@
+#appTitle {
+    float: left;
+}
+
+form {
+    width: 80%;
+    height: 100%;
+}
+
+#cityState {
+    position: relative;
+    margin-left: 16%;
+}

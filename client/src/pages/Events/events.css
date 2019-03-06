@@ -29,21 +29,21 @@
 
 /* This is the CSS from the slideshow */
 #eventSlideshow {
-    width: 100%;
+    width: 600px;
     height: 600px;
     margin: auto; }
   
 .react-slideshow-container {
-    width: 100%;
+    width: 600px;
     height: 600px;
 }
 
 .react-slideshow-zoom-wrapper {
-    width: 100%;
+    width: 600px;
     height: 600px;
 }
 
 .zoom-wrapper {
-    width: 100%;
+    width: 600px;
     height: 600px;
 }

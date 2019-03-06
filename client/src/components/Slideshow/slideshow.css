@@ -2,7 +2,7 @@
   /* This is the CSS from the slideshow page */
   
   .slide-container {
-    width: 100%;
+    width: 600px;
     margin: auto;
     height: 600px;
   }
@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 300px;
+    height: 600px;
   }
   
   .each-slide span {
@@ -31,7 +31,7 @@
   }
   
   .each-fade .image-container {
-    width: 75%;
+    width: 100%;
     overflow: hidden;
   }
   
@@ -47,3 +47,8 @@
     margin: 0;
     background: #adceed;
   }
+
+  /* #adoptDogimg {
+    height: 500px;
+    width: 500px;
+  } */
