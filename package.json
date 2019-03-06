@@ -19,6 +19,7 @@
     "nodemon": "^1.18.10"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-slideshow-image": "^1.1.2"
