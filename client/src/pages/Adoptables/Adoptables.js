@@ -53,10 +53,12 @@ class AdoptPage extends Component {
                     this.state.pets.map(pet => (
                         <Link to={"/bio/" + pet._id}>
                         <PetInfo
+
                             key={pet._id}
                             media={pet.name}
                             src={pet.image}
                             name={pet.name}
+
                         />
                     </Link>
                         // <PetInfo
