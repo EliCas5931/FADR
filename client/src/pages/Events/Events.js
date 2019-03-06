@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './events.css';
 
-import dog1 from '../../images/fadrpuppies.jpg';
-import dog2 from '../../images/fluffypuppy.jpg';
-import dog3 from '../../images/landonfadrevents.jpg';
-import dog4 from '../../images/pitfall.jpg';
+import Slideshow from '../../components/Slideshow/Slideshow';
+
+// import dog1 from '../../images/fadrpuppies.jpg';
+// import dog2 from '../../images/fluffypuppy.jpg';
+// import dog3 from '../../images/landonfadrevents.jpg';
+// import dog4 from '../../images/pitfall.jpg';
 
 class EventPage extends Component {
     render() {
@@ -19,33 +21,9 @@ class EventPage extends Component {
                     </div>
                 </div>
                 <br></br>
-                <h1>Our Past Events!</h1>
-                <div className='row align-items-center'>
-                    <div className='col-8'>
-                        <div id="carousel1" className="carousel slide" data-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img src={dog1} className="d-block w-100" alt="Dog Event Pictures" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={dog2} className="d-block w-100" alt="Dog Event Pictures" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={dog3} className="d-block w-100" alt="Dog Event Pictures" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={dog4} className="d-block w-100" alt="Dog Event Pictures" />
-                                </div>
-                            </div>
-                            <a className="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#carousel1" role="button" data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Next</span>
-                            </a>
-                        </div>
+                <div className='row align-items-center' id='eventSlideshow'>
+                    <div className='col'>
+                        <Slideshow />
                     </div>
                 </div>
             </div>

@@ -42,7 +42,7 @@ class AdoptPage extends Component {
                     this.state.pets.map(pet => (
                         <PetInfo
                         media={pet.name.$t}
-                        src={pet.media.photos.photo[2].$t}
+                        src={pet.media.photos.photo[3].$t}
                         name={pet.name.$t}
                         />
                     )

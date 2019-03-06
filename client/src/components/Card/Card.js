@@ -3,9 +3,11 @@ import React from 'react';
 import './card.css';
 
 function Card(props) {
-    return(
+    return (
         <div className='card'>
-        {props.children}
+            <div className='row'>
+                {props.children}
+            </div>
         </div>
     );
 }
