@@ -7,7 +7,7 @@ class ApplicationPage extends Component {
             <div className='Application'>
                 <div className='row'>
                     <div className='col-12'>
-                        <h1 id='appTitle'> Adoption Application Questions </h1>
+                        <h1 id='appTitle'> Adoption Application</h1>
                     </div>
                 </div>
                 <br></br>
@@ -115,7 +115,29 @@ class ApplicationPage extends Component {
                         </div>
                     </fieldset>
 
-                    {/*  */}
+                    {/* Questions */}
+                    <div className='form-group3'>
+                        <div className='row'>
+                            <legend class='col-form-label col-sm-2 pt-0' id='question1'>How many people live with you?</legend>
+                            <div className='form-check form-check-inline'>
+                            <input className='form-check-input' type='radio' name='inlineRadioQuestions' id='questionValue1' value='question1'></input>
+                            <label className='form-check-label' for='questionValue1'>0</label>
+                            </div>
+                            <div className='form-check form-check-inline'>
+                            <input className='form-check-input' type='radio' name='inlineRadioQuestions' id='questionValue2' value='question1'></input>
+                            <label className='form-check-label' for='questionValue2'>1</label>
+                            </div>
+                            <div className='form-check form-check-inline'>
+                            <input className='form-check-input' type='radio' name='inlineRadioQuestions' id='questionValue3' value='question1'></input>
+                            <label className='form-check-label' for='questionValue3'>2</label>
+                            </div>
+                            <div className='form-check form-check-inline'>
+                            <input className='form-check-input' type='radio' name='inlineRadioQuestions' id='questionValue4' value='question1'></input>
+                            <label className='form-check-label' for='questionValue4'>3 or More</label>
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
             </div>
         );
