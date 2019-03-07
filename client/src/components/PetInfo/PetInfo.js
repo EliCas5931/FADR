@@ -5,10 +5,10 @@ import './petinfo.css';
 function PetInfo(props) {
     return (
        
-            <div className='col-4'>
+            <>
                 <img alt={props.media} className="img-fluid" src={props.src} style={{ margin: "0 auto" }} />
                 <h3>Name: {props.name}</h3>
-            </div>
+            </>
        
     )
 }
