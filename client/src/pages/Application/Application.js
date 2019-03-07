@@ -100,6 +100,7 @@ class ApplicationPage extends Component {
                             </div>
                         </div>
                     </fieldset>
+                    
                     {/* Rent or Own */}
                     <fieldset className='form-group2'>
                         <div className='row'>
