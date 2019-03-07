@@ -15,7 +15,8 @@ class ContactPage extends Component {
                         <h4>Email <a href='mailto:familyadditiondogrescue@gmail.com'>familyadditiondogrescue@gmail.com</a></h4>
                         <h4>Mailing Address: </h4>
                         <p><strong>
-                            PO Box 12221 Charlote, NC 28220
+                            PO Box 12221
+                            Charlotte, NC 28220
                         </strong></p>
                     </div>
                 </div>
