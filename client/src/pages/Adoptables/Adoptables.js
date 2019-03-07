@@ -51,16 +51,18 @@ class AdoptPage extends Component {
                 heading={this.state.pets}>
                 {this.state.pets.length ? (
                     this.state.pets.map(pet => (
-                        <Link to={"/bio/" + pet._id}>
-                        <PetInfo
+                        <div className='col-4'>
+                            <Link to={"/bio/" + pet._id}>
+                                <PetInfo
 
-                            key={pet._id}
-                            media={pet.name}
-                            src={pet.image}
-                            name={pet.name}
+                                    key={pet._id}
+                                    media={pet.name}
+                                    src={pet.image}
+                                    name={pet.name}
 
-                        />
-                    </Link>
+                                />
+                            </Link>
+                        </div>
                         // <PetInfo
                         // media={pet.name.$t}
                         // src={pet.media.photos.photo[3].$t}
@@ -68,9 +70,9 @@ class AdoptPage extends Component {
                         // />
                     )
 
-                )) : (
+                    )) : (
                         <h3>No Dogs Available at this Time.</h3>
-                )}
+                    )}
             </Card>
         )
 

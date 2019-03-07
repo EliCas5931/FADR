@@ -16,14 +16,24 @@ class BioPage extends Component {
     render() {
         const { dog } = this.state;
         return (
-            <div>
-            <img src={dog.image} alt={dog.name} />
-            <h4>{dog.name}</h4>
-            <h5>{dog.age}</h5>
-            <h5>{dog.breed}</h5>
-            <h5>{dog.sex}</h5>
-            <h5>{dog.size}</h5>
-            <p>{dog.description}</p>
+            <div className='dogBioMain'>
+                <div className='row' id='dogBioInfo'>
+                    <div className='col-5'>
+                        <img src={dog.image} alt={dog.name} id='dogBioPic'/>
+                    </div>
+                    <div className='col' id='extraDogInfo'>
+                        <h2 id='dogName'>{dog.name}</h2>
+                        <h2 id='dogAge'>{dog.age}</h2>
+                        <h2 id='dogBreed'>{dog.breed}</h2>
+                        <h2 id='dogSex'>{dog.sex}</h2>
+                        <h2 id='dogSize'>{dog.size}</h2>
+                    </div>
+                </div>
+                <div className='row' id='dogInfo'>
+                    <div className='col-12'>
+                        <p id='dogDescription'>{dog.description}</p>
+                    </div>
+                </div>
             </div>
             
         )
