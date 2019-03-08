@@ -66,7 +66,7 @@ class ApplicationPage extends Component {
                         </div>
                     </div>
 
-                    <h2>About You</h2>
+                    <h2 id='aboutYou'>About You</h2>
 
                     <div className='form-group row'>
                         <label htmlFor='inputOccupation' className='col-sm-2 col-form-label'>Occupation</label>
@@ -100,6 +100,7 @@ class ApplicationPage extends Component {
                             </div>
                         </div>
                     </fieldset>
+                    
                     {/* Rent or Own */}
                     <fieldset className='form-group2'>
                         <div className='row'>

@@ -1,17 +1,25 @@
-.eventsCalendar {
-    padding: 30px;
+.FADREventPix {
+    /* padding: 30px; */
     background: linear-gradient(217deg, rgba(124, 214, 214, 1), rgba(170, 191, 244, 1) 70.71%),
     linear-gradient(127deg, rgba(0,255,0,.8), rgba(132, 206, 235, 1) 70.71%),
     linear-gradient(336deg, rgba(171, 143, 222, 1), rgba(0,0,255,0) 70.71%);
 }
 
 #calendarGoogle {
-    float: left;
+    /* float: left; */
     border-radius: 15px;
     border: 20px solid #ffffff;
     width: 800px!important; 
     height: 600px;
     /* margin-left: 30px; */
+    margin-top: 10px;
+}
+
+#eventsTitle {
+    color: #8860d0;
+    text-align: center;
+    margin-left: 40%;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 /* #agendaGoogle {

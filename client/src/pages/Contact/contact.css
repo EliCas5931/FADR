@@ -21,11 +21,16 @@ h1 {
     width: 400px;
 }
 
-h2 {
+h2,#emailTitle,#mailingTitle {
     color: #8860d0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #contactEmail {
     margin-left: 5%;
     text-align: left;
+}
+
+#contactUs {
+    font-family: 'Gloria Hallelujah', cursive;
 }

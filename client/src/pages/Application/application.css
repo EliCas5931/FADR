@@ -1,10 +1,22 @@
+.Application {
+    background-image: linear-gradient(to bottom right, #E1BEE7, #B2EBF2);
+}
+
 #appTitle {
     float: left;
+    color: #8860d0;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#aboutYou {
+    font-family: 'Gloria Hallelujah', cursive;
+
 }
 
 form {
     width: 80%;
     height: 100%;
+    color: #8860d0;
 }
 
 #cityState {

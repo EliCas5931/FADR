@@ -12,8 +12,8 @@ class ContactPage extends Component {
                 </div>
                 <div className='row' id='contactEmail'>
                     <div className='col'>
-                        <h4>Email <a href='mailto:familyadditiondogrescue@gmail.com'>familyadditiondogrescue@gmail.com</a></h4>
-                        <h4>Mailing Address: </h4>
+                        <h4 id='emailTitle'>Email <a href='mailto:familyadditiondogrescue@gmail.com'>familyadditiondogrescue@gmail.com</a></h4>
+                        <h4 id='mailingTitle'>Mailing Address: </h4>
                         <p><strong>
                             PO Box 12221
                             Charlotte, NC 28220
