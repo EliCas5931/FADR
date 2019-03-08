@@ -11,24 +11,30 @@
     border: 20px solid #ffffff;
     width: 800px!important; 
     height: 600px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
-#agendaGoogle {
+/* #agendaGoogle {
     float: right;
     width: 350px;
     height: 600px;
     border-radius: 15px;
     border: 20px solid #ffffff;
     margin-right: 60px;
-}
+} */
 
 #contactUs {
     color: #8860d0;
 }
 
+.FADREventPhoto {
+    height: 200px;
+    width: 200px;
+    padding-top: 0!important;
+}
+
 /* This is the CSS from the slideshow */
-#eventSlideshow {
+/* #eventSlideshow {
     width: 600px;
     height: 600px;
     margin: auto; }
@@ -46,4 +52,4 @@
 .zoom-wrapper {
     width: 600px;
     height: 600px;
-}
+} */
