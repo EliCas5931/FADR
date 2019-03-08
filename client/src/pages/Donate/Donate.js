@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './donate.css';
 import amazonWish from '../../images/amazonwish.png';
 import deliveryWish from '../../images/petco.jpg';
+import paypal from '../../images/paypal.png';
 
 class DonatePage extends Component {
     render() {
@@ -10,22 +11,12 @@ class DonatePage extends Component {
             <div className='donatePage'>
                 <div className='row'>
                     <div className='col'>
-                        <h2>Family Addition Dog Rescue is a 501C3 group so donations are tax deductible.</h2>
+                        <h2 id='taxDeduct'>Family Addition Dog Rescue is a 501C3 group so donations are tax deductible.</h2>
                     </div>
                 </div>
-                <div className='row2'>
-                    <div className='col'>
-                        <div className="buttonDonate">
-                            <a href='https://www.paypal.com/donate/?token=A7Qqnwdh25gPH-2-6RzPHzkyKwsSr2YyXvRzaTZmT9qb6G4UbXZvObMXoimfTlWFXoPcAm&country.x=US&locale.x=US' target='_blank' rel='noopener noreferrer'>
-                                <button id='donateBtn'>Donations
-				                    <div className="fill-one"></div>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
                 <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-4'>
                         <div className="wishListCard">
                             <img src={amazonWish} className="amazonWish" alt="Amazon Wishlist" />
                             <div className="card-body">
@@ -41,8 +32,25 @@ class DonatePage extends Component {
                             </div>
                         </div>
                     </div>
+
+                    <div className='col-4'>
+                        <div className="wishListCard">
+                            <img src={paypal} className="paypalDonate" alt="Paypal Donation" />
+                            <div className="card-body">
+                                <h5 className="card-title">Paypal</h5>
+                                <p className="card-text">Here is our Paypal where we accept monetary donations here!</p>
+                                <div className='buttonDonate'>
+                                    <a href='https://www.paypal.com/donate/?token=A7Qqnwdh25gPH-2-6RzPHzkyKwsSr2YyXvRzaTZmT9qb6G4UbXZvObMXoimfTlWFXoPcAm&country.x=US&locale.x=US' target='_blank' rel='noopener noreferrer'>
+                                        <button id='donateBtn'>Donate
+				                    <div className="fill-one"></div>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     {/* <div className='row'> */}
-                    <div className='col-6'>
+                    <div className='col-4'>
                         <div className="wishListCard">
                             <img src={deliveryWish} className="deliveryWish" alt="Delivery Code Wishlist" />
                             <div className="card-body">

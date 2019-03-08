@@ -18,7 +18,7 @@ class VolPage extends Component {
             <div className='VolPage'>
                 <div className='row'>
                     <div className='col'>
-                        <h1>Interested in Volunteering?</h1>
+                        <h1 id='inVol'>Interested in Volunteering?</h1>
                         <img src={FADRPoolPawty} alt="Volunteers" className="volunteerPhotoFADR"></img>
                         <img src={TanyaFudgie} alt="VolunteerBigDog" className="volunteerPhotoFADR"></img>
                         <img src={KaleighRescuePuppies} alt="TinyPuppies" className="volunteerPhotoFADR"></img>
@@ -48,7 +48,7 @@ class VolPage extends Component {
                         <img src={barrygrass} alt="Barry with dog in grass" className="barryPhoto"></img>
                         <p>Barry Carter was a true guardian angel on earth for all the lost and forgotten souls of the canine world. Barry did so much in the rescue community from working with coalition to unchain dogs, volunteering at Char-Meck AC, fostering more dogs than you could count, transporting, and so much more. Barry could be around the meanest of dogs and they would quickly warm up to him. Not only did he touch so many canine lives, but he also touched so many other volunteers' lives. He was always willing to lend a helping hand to anyone he knew. Whether there was a fence that needed mending, or something around the house needed fixing, Barry did it. We lost this truly gentle loving spirit in August of 2018. The rescue world will never be the same without him. We have no doubts that he was greeted at the rainbow bridge with so many lives he helped save over the years.</p>
                         {/* Link to Compassion Fatigue information website: http://www.compassionfatigue.org/ */}
-                        <a href="http://www.compassionfatigue.org/" alt="CompassionFatigueLink"><img src={CFAP} alt="CompassionFatigue" className="CFAP"></img></a>
+                        <a href="http://www.compassionfatigue.org/" alt="CompassionFatigueLink" target='_blank' rel='noopener noreferrer'><img src={CFAP} alt="CompassionFatigue" className="CFAP"></img></a>
 
 
                     </div>

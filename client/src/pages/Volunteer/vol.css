@@ -1,3 +1,10 @@
+.VolPage {
+    color: #8860d0;
+    /* background: linear-gradient(217deg, rgba(124, 214, 214, 1), rgba(170, 191, 244, 1) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(132, 206, 235, 1) 70.71%),
+    linear-gradient(336deg, rgba(171, 143, 222, 1), rgba(0,0,255,0) 70.71%); */
+}
+
 .barryPhoto {
     height: 200px;
     width: 200px;
@@ -12,8 +19,11 @@
     text-align: left;
 }
 
-/* .VolPage {
-    background-color: #aa92d1;
-    background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
- /* } */
+#inVol {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #8860d0;
+}
+
+.CFAP {
+    margin-bottom: 10px;
+}

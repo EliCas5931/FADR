@@ -1,8 +1,10 @@
 /* Full Page */
 .donatePage {
-    height: 150%;
-    /* background-image:  */
-   
+    height: 150%;   
+}
+
+#taxDeduct {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .row2 {
@@ -60,7 +62,7 @@
 
 .wishListCard {
     width: 30rem;
-    margin: 20%;
+    margin: 20% 5% 20% 0%;
     height: 300px;
 }
 
