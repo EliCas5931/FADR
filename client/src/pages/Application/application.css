@@ -2,15 +2,19 @@
     background-image: linear-gradient(to bottom right, #E1BEE7, #B2EBF2);
 }
 
+#applicationSection {
+    margin-left: 10%;
+}
+
 #appTitle {
     float: left;
     color: #8860d0;
     font-family: 'Gloria Hallelujah', cursive;
+    margin-left: 38%;
 }
 
-#aboutYou {
+#aboutYou, #references {
     font-family: 'Gloria Hallelujah', cursive;
-
 }
 
 form {
@@ -20,6 +24,6 @@ form {
 }
 
 #cityState {
-    position: relative;
-    margin-left: 16%;
+    /* position: relative; */
+    margin-left: 17.2%;
 }
